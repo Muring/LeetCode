@@ -1,3 +1,5 @@
+
+
 int search(int* nums, int numsSize, int target){
     int i;
     int count = 0;
