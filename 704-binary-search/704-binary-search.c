@@ -10,17 +10,12 @@ int search(int* nums, int numsSize, int target){
         mid = (start + end) / 2;
         
         if (nums[mid] == target){
-            count = 1;
-            break;
+            return mid;
         }
         else if(nums[mid] > target)
             end = mid - 1;
         else
             start = mid + 1;
     }
-    
-    if(count == 1)
-        return mid;
-    else
-        return -1;
+    return -1;
 }
