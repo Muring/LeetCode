@@ -13,7 +13,7 @@ struct ListNode* removeNthFromEnd(struct ListNode* head, int n){
     struct ListNode *Node = malloc(sizeof(struct ListNode));
     int i, count = 0;
     
-    Node->val = -1;
+    //Node->val = -1;
     Node->next = head;
     back = Node;
     front = Node;
